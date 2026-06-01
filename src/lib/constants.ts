@@ -23,8 +23,6 @@ export const IMAGE_SIZES = {
   },
 } as const;
 
-// TODO: Add more constants as needed
-// Examples: API endpoints, query keys, storage keys, etc.
 
 export const STORAGE_KEYS = {
   favorites: 'movie-favorites',
@@ -39,3 +37,5 @@ export const QUERY_KEYS = {
     search: (query: string, page: number) => ['movies', 'search', query, page] as const,
   },
 } as const;
+
+export const IMAGE_BASE_URL = "https://image.tmdb.org/t/p"
